@@ -1,0 +1,1 @@
+docker run -d --name=saltstack-docker-training -v $(pwd)/etc_salt/:/etc/salt -v $(pwd)/srv/salt:/srv/salt --restart=unless-stopped saltstack-docker-training

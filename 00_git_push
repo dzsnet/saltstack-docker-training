@@ -1,0 +1,9 @@
+DATE="$(date +"%Y%m%d_%k%M%S")"
+git remote add origin git@github.com:dzsnet/saltstack-docker-training.git
+git remote set-url origin git@github.com:dzsnet/saltstack-docker-training.git
+git remote update
+git fetch
+git checkout --track origin/main
+git add .
+git commit -m $DATE
+git push origin HEAD:main -f

@@ -1,0 +1,1 @@
+docker exec -it saltstack-docker-training /bin/bash
