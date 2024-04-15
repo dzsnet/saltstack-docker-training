@@ -15,6 +15,26 @@ This will create an image and a container called **saltstack-docker-training**.
 
 ## Salt commands can also be executed directly without the interactive shell:
 ```bash
+docker exec saltstack-docker-training salt-key
+```
+```bash
+Accepted Keys:
+Denied Keys:
+Unaccepted Keys:
+minion
+Rejected Keys:
+``` 
+```bash
+docker exec saltstack-docker-training salt-key -a minion -y
+```
+```bash
+The following keys are going to be accepted:
+Unaccepted Keys:
+minion
+Key for minion minion accepted.
+```
+
+```bash
 docker exec -it saltstack-docker-training salt minion test.ping
 ```
 ```bash
