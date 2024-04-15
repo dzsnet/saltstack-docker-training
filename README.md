@@ -1,6 +1,6 @@
 # Saltstack docker container for training and testing
 
-The image contains the master and the minion as well.
+The image contains the master and the minion as well. The configuration does not expose ports 4505/4506 as it is only for testing within the container and it is not meant for production environments.
 
 Run ``docker_image_create``
 
